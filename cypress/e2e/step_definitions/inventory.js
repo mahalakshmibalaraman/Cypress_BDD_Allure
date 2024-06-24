@@ -5,11 +5,12 @@ const inventoryPage = require("../../pages/InventoryPage");
 
 
 Given("A user has logged in successfully", () => {
-    cy.visit("/");
+    /* cy.visit("/");
     loginPage.typeUsername('standard_user');
     loginPage.typePassword('secret_sauce');
     loginPage.clickLogin();
-    cy.url().should("contains", "/inventory.html");
+    cy.url().should("contains", "/inventory.html"); */
+    cy.login();
   });
 
 
